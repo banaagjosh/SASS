@@ -1,141 +1,41 @@
-
 .banner{
-    padding: 0 4rem;
-.container{
-    .banner__wrapper{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 14rem;
-        .banner__text{
-                text-align: center;
-               
-                h1{
-                    color: #ffa700;
-                    text-align: center;
-                    font-size: 3rem;
-                    font-weight: 700;
-                    margin-bottom: 2rem;
-                }
+    background-image: url("/dist/img/lQkfJOiMaudicSk7PQT5k4IDINiWdchEhrOWK5lw.jpeg");
+    background-size: cover;
+    background-position: 90%;
+    height: 40rem;
+    padding: 6rem 2rem;
+    &__wrapper{
 
-                p{
-                    text-align: justify;
-                }
-
-                a{
-                    font-weight: 500;
-                    margin-top: 2rem 0;
-                    background: #ffa700;
-                    color: $clr-light;
-                    border-radius: 10rem;
-                    display: block;
-                    width: fit-content;
-                    margin: 0 auto;
-                }
-                a:hover{
-                    color: $clr-primary;
-                    background: $clr-dark;
-                    }    
-        }
-                img{
-                    max-width: 100%;
-                    margin-bottom: 3rem;
-                }
-    }
-    @include mediaQuery($break-lg){
-        .banner__wrapper{
-          flex-direction: row;
-          justify-content: space-between;
-            .banner__text{
-                display: flex;
-                flex-direction: column;
-                max-width: 50rem;
-                h1{
-                    color: #ffa700;
-                    font-size: 10rem;
-                    font-weight: 800;
-                    max-width: 20%;
-                    line-height: 1;
-                }
-                p{
-                    max-width: 80%;
-                }
-                a{
-                    max-width: 20%;
-                    margin-top: 5rem;
-                }
-                a:hover{
-                    color: $clr-primary;
-                    background: $clr-dark;
-                    }    
-            }
-        }
-      }
-}    
-}
-
-.hm-services{
-    margin-top: 7rem;
-    padding: 0 4rem;
-    background: $clr-dark;
-
-    .container{
-        .hm-services__wrapper{
-           text-align: center;
-           padding-bottom: 5rem;
-            .btn{
-                margin-bottom: 100px;
-            }
-        }
-        .hm-services__item{
-            text-align: center;
-            padding: 2rem;
-            i{
-                font-size: 6rem;
-                text-align: center;
-                margin-bottom: 3rem;
-                color: $clr-primary;
-                padding-top: 5rem;
-                font-weight: 600;
-            }
-            h4{
-                color: $clr-primary;
-                font-size: 2.5rem;
-                padding-bottom: 3rem;
-                text-align: center;
-            }
-            p{
-               text-align: justify;
-               margin-bottom: 3rem;
-                color: $clr-light;
+        .branding{
+            h1{
+                font-size: 4rem;
+                padding-top: 3rem!important;
+                padding-bottom: 3rem!important;
+                color: $clr-primary-dark;
             }
             a{
-                font-size: 1.5rem;
-                color: $clr-light;
-                background: $clr-primary;
-                padding: 2rem;
-                border-radius: 3rem;
-                padding-bottom: 2rem;
+                background-color: transparent;
+                color: $clr-primary-dark;
+                font-weight: 800;
+                    &:hover{
+                        background-color: #ffffff3a
+                    }
+                
             }
-                a:hover{
-                    color: $clr-primary;
-                    background: $clr-light;
-                    }    
-        
         }
-        
-    @include mediaQuery($break-lg){
-
-        .hm-services__wrapper{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10rem;
-        }
+    }
 }
 
-}
-
-
-
+@include mediaQuery($desktop){
+    .banner{
+        height: 560px;
+        .branding{
+            padding: 6rem 4rem;
+            h1{
+                font-size: 7rem;
+                  
+            }
+           
+        }
+    }
 }
